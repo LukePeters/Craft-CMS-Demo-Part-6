@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ siteName }}</title>
+    <link rel="stylesheet" href="{{ siteUrl }}assets/style.css">
+</head>
+<body>
+
+    <header class="header">
+        
+        <a href="{{ siteUrl }}" class="logo">
+            <img src="{{ siteUrl }}assets/images/logo.svg" alt="Craft CMS">
+        </a>
+
+        <nav class="nav">
+            <a href="" class="nav-link">About Us</a>
+            <a href="" class="nav-link">Contact</a>
+        </nav>
+
+    </header>
+    
+    <div class="content-column">
+        {% block content %}
+            {# Page template inserted here #}
+        {% endblock %}
+    </div>
+
+    <footer class="footer">
+        <p>&copy; Copyright 2020 ACME Inc. All rights reserved.</p>
+    </footer>
+
+    <script src="{{ siteUrl }}assets/script.js"></script>
+    
+</body>
+</html>

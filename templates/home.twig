@@ -1,0 +1,11 @@
+{% extends "index" %}
+
+{% block content %}
+
+  <h1>Hello World</h1>
+
+  {{ entry.richText }}
+
+  <img src="{{ entry.featureImage.one().getUrl('medium') }}" alt="Feature Image" class="feature-img">
+
+{% endblock %}
